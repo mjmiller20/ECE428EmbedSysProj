@@ -53,12 +53,14 @@ https://randomnerdtutorials.com/esp32-cam-video-streaming-web-server-camera-home
 Appendix A
 
 A model circuit diagram for the module showing connections to the ESP32 module, PIR sensor, and RGB LED.
+
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/43389618/234488796-ec9830b4-1346-41d3-bcee-4313183c3830.png">
 
 
 Appendix B
 
 A high-level flowchart of the program loaded onto the ESP32 Module.
+
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/43389618/234488935-9ac4b57e-3174-40c8-ba58-b5b7853c6016.png">
 
 
