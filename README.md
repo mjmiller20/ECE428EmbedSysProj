@@ -31,6 +31,7 @@ Additional features could include an IR light and filter for night vision.
 Implementation into market would require use of a high-level server or set-top box could then provide a User Interface for ease of access and implementation for the End User. 
 
 References
+
 https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/esp_http_server.html
 https://lastminuteengineers.com/pir-sensor-arduino-tutorial/
 https://randomnerdtutorials.com/esp32-cam-ai-thinker-pinout/
