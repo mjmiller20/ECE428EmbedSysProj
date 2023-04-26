@@ -3,26 +3,32 @@
 Low-Cost Residential Security Camera
 
 Proposed Goals
+
 At the onset of this project, we set out to solve the issue of creating a low-cost alternative to current commercial or residential solutions that both gave the end user granular control over their system and control over the telemetry data sent back to the manufacturer. 
 The goals for this project included creating a prototype of a solution that connects to a Wireless LAN, transmits a video feed, reacts from a passive infrared sensor (PIR), and operate an RGB light remotely. 
 
 Resources
+
 During this project, I relied heavily on a project from (RandomNerdTutorials, 2020).
 After getting this baseline to work, I worked heavily with the WiFi and httpd libraries to establish wide connections and operate a basic Web API from the device (Espressif, 2016).
 For the PIR, I used basic information on the pins and the signal it would generate to make a basic script to handle the inputs to generate an output change (Last Minute Engineers, 2022).
 Connecting the ESP32 required intimate knowledge of the ESP32-CAM GPIO pins and their functions as well, to communicate with the PIR and LED (RandomNerdTutorials, 2020).
 
 Circuits
+
 The circuit diagram is shown in Appendix A, and shows power connections to the ESP32 and PIR, with easy connection to a high-power LED as well as data lines to the LED and PIR. 
 
 Code
+
 A high-level flow chart showing the implementation on the ESP32 module is shown in Appendix B.
 The code is dense with the implementation of the various libraries, but is found in Appendix C. 
 
 Libraries
+
 This project required usage of the ESP32 board library, including the esptool.py board programmer script with alterations to work with the latest version of Python 3. 
 
 Results and Conclusion
+
 With a series of tests, the module is functional and meets the requirements of the project set forth in the proposal, except for using a high-power floodlight RGB LED.
 A low-level implementation of network attached-camera is produced with LAN-API access enabled for controls and information delivery.
 There was a higher cost than expected, but still lower than many market alternatives, without compromising on data security.
