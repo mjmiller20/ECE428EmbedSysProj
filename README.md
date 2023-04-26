@@ -1,4 +1,4 @@
-# ECE428 Embedded Systeme Project
+# ECE428 Embedded System Project
 
 Low-Cost Residential Security Camera
 
