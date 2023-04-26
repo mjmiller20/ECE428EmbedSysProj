@@ -12,7 +12,14 @@
 
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
+  
+  Jarod Miller
+  Adaptations to include additional functionality: Lights control via web API and PIR Motion Sensing
+  More information on development and documentation in README
+  Original License maintained, more information in LICENSE
 *********/
+
+
 
 #include "esp_camera.h"
 #include <WiFi.h>
@@ -25,17 +32,17 @@
 #include "esp_http_server.h"
 
 //Replace with your network credentials
-const char* ssid = "Louisiana";
-const char* password = "JHR2022!";
+const char* ssid = "INSERT_SSID_HERE";
+const char* password = "INSERT_PASSWORD_HERE_WPA2";
 
 #define PART_BOUNDARY "123456789000000000000987654321"
 
-// This project was tested with the AI Thinker Model, M5STACK PSRAM Model and M5STACK WITHOUT PSRAM
+// This project was tested with the AI Thinker Model
 #define CAMERA_MODEL_AI_THINKER
+
+// Not tested with these models
 //#define CAMERA_MODEL_M5STACK_PSRAM
 //#define CAMERA_MODEL_M5STACK_WITHOUT_PSRAM
-
-// Not tested with this model
 //#define CAMERA_MODEL_WROVER_KIT
 
 #if defined(CAMERA_MODEL_WROVER_KIT)
